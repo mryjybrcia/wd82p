@@ -107,7 +107,6 @@ body {
   width: 100%;
   padding: 5px;
   font-size: 14px;
-  -webkit-appearance: none;
 }
 
 .form-row textarea {
