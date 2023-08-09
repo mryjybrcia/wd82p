@@ -1,0 +1,20 @@
+h1 {
+  color: white;
+  text-align: center;
+  background-color: red;
+}
+
+p {
+  color: white;
+  font-family: "Times New Roman";
+  background-color: green;
+}
+button {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #f6be00;
+  border: hsl(from color h s l);
+  border-radius: 3px;
+  cursor: pointer;
+}
