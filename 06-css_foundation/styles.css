@@ -1,0 +1,37 @@
+body {
+  color: #414141;
+  background-color: gainsboro;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h1,
+h2 {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: 900;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: left;
+}
+em {
+  font-weight: 900;
+}
