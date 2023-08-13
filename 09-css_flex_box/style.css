@@ -21,16 +21,17 @@
   justify-content: space-between;
 }
 
-.links {
+/* .links {
   display: flex;
 }
 
 .signup {
   margin-right: 20px;
-}
+} */
 
-.date {
-  order: 1;
+.href {
+  display: flex;
+  margin: 20px;
 }
 /*End of header*/
 
