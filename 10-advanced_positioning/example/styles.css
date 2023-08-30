@@ -30,6 +30,9 @@ a:hover {
   background: #d6e9fe;
 }
 
+.logo img {
+  width: 200px;
+}
 .menu {
   display: flex;
   list-style-type: none;
@@ -72,4 +75,17 @@ a:hover {
 .features {
   z-index: 2;
   position: relative;
+}
+
+.md-menu-links {
+  display: none;
+}
+
+@media only screen (min-width: 601px) {
+  .dropdown {
+    display: none;
+  }
+  .md-menu-links {
+    display: block;
+  }
 }
