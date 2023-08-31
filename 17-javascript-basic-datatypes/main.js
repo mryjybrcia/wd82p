@@ -38,7 +38,7 @@ console.log(x);
 
 console.log(year);
 
-// comparison ( == ) ( > greater) (< less than)
+// comparison ( == ) ( > greater) (< less than) - comparison datatypes
 let a = 5;
 let b = 2;
 
@@ -78,7 +78,10 @@ console.log("The value of double: " + backtick);
 console.log(greeting);
 console.log(joined);
 console.log(newline);
+
 // 3. Boolean
 // true or false
+// 0 = falsy
+// 1 = truthy
 
 console.log(typeof 0);
