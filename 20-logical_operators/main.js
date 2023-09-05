@@ -241,6 +241,7 @@ const str = `capitalize`;
 const str2 = str.charAt(0).toUpperCase() + str.slice(1);
 console.log(str2);
 
+// third
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase(0) + str.slice(1);
 }
