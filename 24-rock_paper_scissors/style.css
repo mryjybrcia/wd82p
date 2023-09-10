@@ -34,3 +34,29 @@
 .scoreboard-container p {
   font-size: 32px;
 }
+
+.turns-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+.turns-container h2 {
+  font-size: 50px;
+}
+
+.weapons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.weapons-container button {
+  padding: 1em;
+  background: none;
+  cursor: pointer;
+}
+
+.weapons-container button:hover {
+  background-color: aliceblue;
+}
