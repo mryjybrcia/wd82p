@@ -1,0 +1,16 @@
+shopping-list {
+  display: grid;
+  gap: 1em;
+  list-style-type: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.shop-item {
+  background-color: antiquewhite;
+  padding: 1em;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
