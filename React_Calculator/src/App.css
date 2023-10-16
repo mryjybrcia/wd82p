@@ -1,0 +1,42 @@
+div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+input {
+  grid-column: 1 / 5;
+}
+
+.clear {
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+  background-color: lightblue;
+}
+
+.zero {
+  grid-row: 6 / 7;
+  grid-column: 1 / 4;
+}
+
+.divide {
+  grid-row: 2 / 3;
+  grid-column: 4 / 5;
+}
+
+.times {
+  grid-row: 3 / 4;
+  grid-column: 4 / 5;
+}
+
+.minus {
+  grid-row: 4 / 5;
+  grid-column: 4 / 5;
+}
+.add {
+  grid-row: 5 / 6;
+  grid-column: 4 / 5;
+}
+
+.equals {
+  grid-row: 6 / 7;
+  grid-column: 4 / 5;
+}
