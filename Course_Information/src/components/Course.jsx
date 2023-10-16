@@ -1,5 +1,5 @@
-import Total from "./Total";
 import Part from "./Part";
+import Total from "./Total";
 
 function Course({ course }) {
   return (
@@ -7,7 +7,7 @@ function Course({ course }) {
       <h2>{course.name}</h2>
       <ul>
         {course.parts.map((part) => (
-          <Part key={part.id} part={part} />
+          <Part parts={part.id} part={part} />
         ))}
       </ul>
       <Total parts={course.parts} />

@@ -1,6 +1,6 @@
 function Part({ part }) {
   return (
-    <li key={part.id}>
+    <li>
       {part.name} {part.exercises}
     </li>
   );
