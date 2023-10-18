@@ -5,6 +5,7 @@ import Button from "./components/Button";
 import Display from "./components/Display";
 
 function App() {
+  // these are ok
   const [clicks, setClicks] = useState({
     left: 0,
     right: 0,
