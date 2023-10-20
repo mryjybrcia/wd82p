@@ -1,8 +1,11 @@
+import axios from "axios";
 import { useState } from "react";
+import personService from "../services/persons";
 
 function PersonForm({ persons, setPersons, setResults }) {
   const [newName, setNewName] = useState("");
   const [newNumber, setNewNumber] = useState("");
+
   const addPerson = (e) => {
     e.preventDefault();
 
@@ -11,10 +14,13 @@ function PersonForm({ persons, setPersons, setResults }) {
       number: newNumber,
     };
 
-    setPersons(persons.concat(newPerson));
-    setResults(persons.concat(newPerson));
-    setNewName("");
-    setNewNumber("");
+    // axios.post("http://localhost:3001/Persons", newPerson).then((response) => {
+    personService.create(newPerson).then((returnedPerson) => {
+      setPersons(persons.concat(returnedPerson));
+      setResults(persons.concat(returnedPerson));
+      setNewName("");
+      setNewNumber("");
+    });
   };
   const handleNewName = (e) => setNewName(e.target.value);
   const handleNewNumber = (e) => setNewNumber(e.target.value);
