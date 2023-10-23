@@ -1,14 +1,9 @@
 {
   "Persons": [
     {
-      "id": 2,
-      "name": "Ada Lovelace",
-      "number": "39-44-5323523"
-    },
-    {
-      "name": "Arto Hellas",
-      "number": "124-454-454",
-      "id": 3
+      "name": "MJ Labadan",
+      "number": "124-586-1547",
+      "id": 1
     }
   ]
 }

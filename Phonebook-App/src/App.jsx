@@ -4,10 +4,12 @@ import Person from "./components/Person";
 import PersonForm from "./components/PersonForm";
 import Search from "./components/Search";
 import personService from "./services/persons";
+import Notification from "./components/Notification";
 
 function App() {
   const [persons, setPersons] = useState([]);
   const [results, setResults] = useState(persons);
+  const [notification, setNotification] = useState("");
 
   // const fetchPersons = async () => {
   //   const response = await fetch("http://localhost:3001/Persons");
@@ -29,13 +31,15 @@ function App() {
 
   return (
     <div>
-      <h1>Phonebook App</h1>
+      <h1 className="App">Phonebook App</h1>
+      <Notification notification={notification} />
       <Search persons={persons} setResults={setResults} />
       <h2>Add a new</h2>
       <PersonForm
         persons={persons}
         setPersons={setPersons}
         setResults={setResults}
+        setNotification={setNotification}
       />
       <h2>Numbers</h2>
       <ul>
@@ -44,7 +48,6 @@ function App() {
             key={person.id}
             person={person}
             persons={persons}
-            results={results}
             setPersons={setPersons}
             setResults={setResults}
           />

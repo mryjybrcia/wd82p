@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import personService from "../services/persons";
 
-function PersonForm({ persons, setPersons, setResults }) {
+function PersonForm({ persons, setPersons, setResults, setNotification }) {
   const [newName, setNewName] = useState("");
   const [newNumber, setNewNumber] = useState("");
 
@@ -18,6 +18,7 @@ function PersonForm({ persons, setPersons, setResults }) {
     personService.create(newPerson).then((returnedPerson) => {
       setPersons(persons.concat(returnedPerson));
       setResults(persons.concat(returnedPerson));
+      setNotification(`Added ${returnedPerson.name}`);
       setNewName("");
       setNewNumber("");
     });

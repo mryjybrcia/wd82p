@@ -1,6 +1,7 @@
 import personService from "../services/persons";
+import "./Person.css";
 
-function Person({ person, persons, results, setPersons, setResults }) {
+function Person({ person, persons, setPersons, setResults }) {
   const { id, name, number } = person;
 
   const handleDelete = (id) => {
@@ -16,7 +17,7 @@ function Person({ person, persons, results, setPersons, setResults }) {
     });
   };
   return (
-    <li>
+    <li className="person">
       <button onClick={() => handleDelete(id)}>x</button>
       {name} {number}
     </li>
